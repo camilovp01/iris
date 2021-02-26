@@ -1,5 +1,9 @@
 {
-  "extends": "tslint:recommended",
+  "extends": [
+    "tslint:recommended",
+    "tslint-plugin-prettier",
+    "tslint-config-prettier"
+  ],
   "rulesDirectory": [
     "codelyzer"
   ],
@@ -27,7 +31,10 @@
         "spaces"
       ]
     },
-    "max-classes-per-file": false,
+    "max-classes-per-file": [
+      true,
+      1
+    ],
     "max-line-length": [
       true,
       140
@@ -38,8 +45,9 @@
         "order": [
           "static-field",
           "instance-field",
-          "static-method",
-          "instance-method"
+          "public-constructor",
+          "public-instance-method",
+          "private-instance-method"
         ]
       }
     ],
@@ -53,7 +61,7 @@
     ],
     "no-empty": false,
     "no-inferrable-types": [
-      true,
+      false,
       "ignore-params"
     ],
     "no-non-null-assertion": true,
