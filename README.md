@@ -16,5 +16,5 @@ Por cuestiones de tiempo solo se generó un link que lleva al módulo de ToDo
 
 -Se implementa el to do list con el patrón redux y facade, se puede apreciar la persistencia del estado del store navegando al home y nuevamente al modulo de to do list
 
--Se construyó Mobile First, quedan faltantes los break point para tablet y para PC
+-Se construyó Mobile First, quedan faltantes los break point para tablet
 
