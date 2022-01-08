@@ -1,0 +1,33 @@
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.list {
+    margin-top: 45px;
+}
+
+.add-todo {
+    display: flex;
+    align-items: center;
+    button {
+        width: 80px;
+        background-color: #fff;
+        outline: none;
+        border: 1px solid #ccc;
+        height: 42px;
+    }
+}

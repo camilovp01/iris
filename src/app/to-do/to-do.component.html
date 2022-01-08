@@ -1,0 +1,23 @@
+<div class="title">
+    <h1>{{title}}</h1>
+</div>
+<div class="options">
+    <select id="filter">
+        <option *ngFor="let state of statesToDo" value="{{state}}">
+            {{ state }}
+        </option>
+    </select>
+    <div class="add-todo">
+        <input [(ngModel)]="titleToDo" type="text" id="newToDo" placeholder="New to do" />
+        <button (click)="addnewToDo()">+</button>
+    </div>
+</div>
+<div class="list">
+    <h2>{{subTitle}}</h2>
+    <hr>
+    <ng-container *ngIf="toDoList.length > 0">
+        <app-item *ngFor="let todo of toDoList" [toDo]="todo" (toggleEvent)="toggleToDo($event)"
+            (deleteEvent)="deleteToDo($event)">
+        </app-item>
+    </ng-container>
+</div>

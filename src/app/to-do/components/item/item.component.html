@@ -1,0 +1,9 @@
+<div class="content-todo">
+    <div class="todo">
+        <input type="checkbox" [checked]="toDo.completed" (change)="toggleTodo(toDo.id)">
+        <span class="text"> {{toDo.title}}</span>
+    </div>
+    <div class="delete" (click)="deleteTodo(toDo.id)">
+        X
+    </div>
+</div>

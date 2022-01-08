@@ -1,15 +1,16 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { ToDoComponent } from "./to-do.component";
 
 const routes: Routes = [
   {
     path: "",
-    loadChildren: () => import("./home/home.module").then((m) => m.HomeModule),
+    component: ToDoComponent,
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class ToDoRoutingModule {}

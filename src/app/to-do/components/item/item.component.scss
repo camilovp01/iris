@@ -1,0 +1,31 @@
+.content-todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    height: 40px;
+    font-size: 20px;
+    .todo {
+        display: flex;
+        background-color: #fff;
+        width: 95%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        .text {
+            margin-left: 16px;
+            overflow: auto;
+        }
+    }
+}
+
+.delete {
+    color: red;
+    margin-left: 8px;
+    &:hover {
+        cursor: pointer;
+        color: rgb(149, 7, 7);
+    }
+}
