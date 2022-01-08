@@ -1,6 +1,7 @@
 # Proyecto Iris
 
 Proyecto generado con [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
+Partiendo de una base que se tenía construida, para agilizar configuraciones.
 
 ## Desplegar el servidor en modo desarrollo
 
